@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2026 | Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #161b33; --card: #1f2544; --cyan: #00d2ff; --yellow: #ffce00; --pink: #ff005c; }
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: var(--bg); color: white; }
+        .hero { height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1467810563316-b54769d7c3f9?q=80&w=1000'); background-size: cover; }
+        .hero h1 { font-family: 'Great Vibes', cursive; font-size: 5rem; color: var(--yellow); margin: 0; }
+        .explore { padding: 50px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 40px; border-radius: 15px; text-decoration: none; color: white; border-left: 8px solid transparent; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); background: #282f54; }
+        .family { border-left-color: var(--cyan); } .family h3 { color: var(--cyan); }
+        .friends { border-left-color: var(--yellow); } .friends h3 { color: var(--yellow); }
+        .inspire { border-left-color: var(--pink); } .inspire h3 { color: var(--pink); }
+    </style>
+</head>
+<body>
+    <div class="hero"><h1>Happy New Year 2026</h1><p>Select a category to explore wishes</p></div>
+    <div class="explore">
+        <h2 style="font-size: 2.5rem; margin-bottom: 30px;">Explore Wishes</h2>
+        <div class="grid">
+            <a href="family.html" class="card family"><h3>For Family</h3><p>Heartfelt messages for your loved ones.</p></a>
+            <a href="friends.html" class="card friends"><h3>For Friends</h3><p>Cheers to new memories with your crew.</p></a>
+            <a href="inspirational.html" class="card inspire"><h3>Inspirational</h3><p>Motivational quotes for the year ahead.</p></a>
+        </div>
+    </div>
+</body>
+</html>
