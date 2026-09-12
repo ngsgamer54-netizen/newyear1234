@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Vidhi ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;display:grid;place-items:center;color:#fff;font-family:Arial,sans-serif;background:radial-gradient(circle at 20% 20%,#64133f,transparent 35%),radial-gradient(circle at 80% 80%,#32145c,transparent 35%),linear-gradient(135deg,#09000d,#17051d,#08000d)}
+.card{width:min(650px,90%);padding:55px 45px;text-align:center;border:1px solid #ffffff2b;border-radius:30px;background:#ffffff12;backdrop-filter:blur(20px);box-shadow:0 30px 100px #0009}
+.small{letter-spacing:5px;text-transform:uppercase;color:#ff9cc6;font-size:13px}h1{font-family:Georgia,serif;font-size:80px;margin:15px 0;background:linear-gradient(90deg,#fff,#ffc2dd,#fff);-webkit-background-clip:text;color:transparent}.sub{color:#ffffffa8}.letter{font-family:Georgia,serif;font-size:22px;line-height:1.55;min-height:145px;display:grid;place-items:center;margin-top:20px}.question{font-family:Georgia,serif;font-size:27px;margin-top:20px}.buttons{margin-top:25px;display:flex;justify-content:center;gap:15px}.buttons button{border:0;border-radius:50px;padding:13px 28px;cursor:pointer;font-size:14px}.yes{color:#fff;background:linear-gradient(135deg,#ff3f87,#c51d68);box-shadow:0 8px 25px #ff2d7d59}.no{color:#ddd;background:#ffffff14;border:1px solid #ffffff20!important}.final{display:none}.big{font-size:70px}.final h2{font-family:Georgia,serif;font-size:48px}.final p{line-height:1.7;color:#f5dce8}.heart{position:fixed;bottom:-30px;color:#ff6fae;animation:up 7s linear forwards;filter:drop-shadow(0 0 8px #ff2f7d)}@keyframes up{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}@media(max-width:600px){.card{padding:40px 25px}h1{font-size:58px}.letter{font-size:19px}.question{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="card">
+<div id="main"><div class="small">A little something for</div><h1>Vidhi</h1>
+<div class="sub">For the girl who makes my world feel complete ❤️</div>
+<div class="letter"><span id="typing"></span></div>
+<div class="question">So, Vidhi... ❤️<br><small>I choose you. Today, tomorrow, and every day after that. ❤️</small></div>
+<div class="buttons"><button class="yes" onclick="yes()">I Love You Too ❤️</button><button class="no" onclick="no()">I Love You More 😘</button></div></div>
+<div class="final" id="final"><div class="big">❤️</div><h2>Still you. Always you. ❤️</h2><p>One lifetime feels a little short with you.<br>Whatever comes next, I want to face it with you.<br><br>You are my favourite chapter. ✨</p></div>
+</div>
+<script>
+const text="Vidhi, tum meri life ka woh beautiful part ho jise main kabhi lose nahi karna chahta. Tumhare saath ordinary moments bhi special lagte hain. Tumhari smile, tumhari baatein, tumhara saath, sab mere liye bahut precious hai. Main perfect nahi hoon, par tumhare liye better banne ki koshish hamesha karta rahunga. I love you, not just for who you are, but for the way you make me feel when I am with you. ❤️";
+let i=0;function type(){if(i<text.length){document.getElementById('typing').textContent+=text[i++];setTimeout(type,25)}}setTimeout(type,700);
+function heart(){let h=document.createElement('div');h.className='heart';h.textContent=['♥','♡','❤','💗','💖'][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+'vw';h.style.fontSize=12+Math.random()*22+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}setInterval(heart,650);
+function yes(){document.getElementById('main').style.display='none';document.getElementById('final').style.display='block';for(let i=0;i<35;i++)setTimeout(heart,i*70)}
+function no(){let b=document.querySelector('.no');b.style.position='fixed';b.style.left=Math.random()*80+10+'%';b.style.top=Math.random()*80+10+'%'}
+</script>
+</body></html>
